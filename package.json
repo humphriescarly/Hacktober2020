@@ -1,0 +1,23 @@
+{
+  "name": "hacktober2020",
+  "version": "1.0.0",
+  "description": "HacktoberFest Project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "less-watch-compiler src dist styles.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarai/Hacktober2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aarai/Hacktober2020/issues"
+  },
+  "homepage": "https://github.com/aarai/Hacktober2020#readme",
+  "devDependencies": {
+    "less": "^3.12.2",
+    "less-watch-compiler": "^1.14.6"
+  }
+}
