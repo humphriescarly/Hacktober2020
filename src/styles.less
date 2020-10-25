@@ -12,6 +12,33 @@ body { width: 100%; max-width: 1440px; margin: 0 auto; color: @grey; font-family
     }
 }
 
-.test {
-    h1 {color:blue;}
-}
+.grid__parent {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr 1fr;
+    grid-template-rows: 2fr 100px 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    padding: 10px;
+
+    .grid__item {
+        background: #3273dc;
+        color: #fff;
+        padding: 20px;
+        font-size: 21px;
+        border-radius: 5px;
+        overflow: hidden;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+ }
