@@ -4,7 +4,7 @@
   "description": "HacktoberFest Project",
   "main": "index.js",
   "scripts": {
-    "dev": "less-watch-compiler src dist styles.less"
+    "start": "concurrently \"http-server ./\" \"less-watch-compiler src dist styles.less\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/aarai/Hacktober2020#readme",
   "devDependencies": {
+    "concurrently": "^5.3.0",
+    "http-server": "^0.12.3",
     "less": "^3.12.2",
     "less-watch-compiler": "^1.14.6"
   }
